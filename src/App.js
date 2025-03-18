@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import HeroSection from './component/HeroSection';
+import ContactForm from './component/ContactForm';
+import ServiceCards from './component/ServiceCards';
+import PlanCard from './component/PlanCard';
+import DummyUsers from './component/DummyUsers';
+import NavBar from './component/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // All components
+    <div className="" sc>
+      <NavBar/>
+      <HeroSection/>
+      <div className='w-3/4 mx-auto'>
+        <ServiceCards/>
+        <PlanCard/>
+        <DummyUsers/>
+        <ContactForm/>
+      </div>
     </div>
   );
 }
